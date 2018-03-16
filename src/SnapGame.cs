@@ -25,12 +25,9 @@ namespace CardGames
 
 			if (SwinGame.KeyTyped (KeyCode.vk_SPACE))
 			{
-<<<<<<< HEAD
                 myGame.Start();
             }
-=======
-				myGame.FlipNextCard ();
-			}
+
 			if(myGame.IsStarted)
 			{
 				if(SwinGame.KeyTyped (KeyCode.vk_LSHIFT)&&
@@ -42,12 +39,11 @@ namespace CardGames
 				{
 					myGame.PlayerHit(0);
 				}
-				else if (SwinGame.KeyTyped(KeyCode.vk_LSHIFT))
+				else if (SwinGame.KeyTyped(KeyCode.vk_RSHIFT))
 				{
 					myGame.PlayerHit(1);
 				}
 			}
->>>>>>> add-player-hit
 		}
 
 		/// <summary>
